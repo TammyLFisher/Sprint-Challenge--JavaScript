@@ -29,10 +29,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+The .forEach() method executes a provided function once for each array element. It doesn't actually return anything, but simply calls a provided function on each element in the array. It allows the array that is called on to change.
+
+The .map() method creates a whole new array with the results of the function that is provided calling on every element in the array. It also calls a provided function on every element. The method .map() utilizes a return value and actually returns a new array of the same size.
 
 2. What is the difference between a function and a method?
+A function becomes a method once placed inside of an object.
 
 3. What is closure?
+A closure is a function bundled together with references to its surrounding state. It gives you access to an outer function's scope from an inner scope function. Closures are created every time and at the same time a function is created. Using a closure requires the defining of a function inside of another function and exposing it. To invoke a function, return it or pass it into another function. The inner function will have access to the variables in the outer scope, even after the outer function has been returned.
 
 4. Describe the four rules of the 'this' keyword.
 
