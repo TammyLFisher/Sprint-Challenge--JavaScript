@@ -40,8 +40,16 @@ A function becomes a method once placed inside of an object.
 A closure is a function bundled together with references to its surrounding state. It gives you access to an outer function's scope from an inner scope function. Closures are created every time and at the same time a function is created. Using a closure requires the defining of a function inside of another function and exposing it. To invoke a function, return it or pass it into another function. The inner function will have access to the variables in the outer scope, even after the outer function has been returned.
 
 4. Describe the four rules of the 'this' keyword.
+ Window/Global binding: Functions within the global scope are in fact methods on the window object, therefore, 'this' inside of the function will point to a window.
+
+ Implicit binding: Whenever a function is called by a preceding dot, the object before the dot is 'this'.
+
+ New binding: Whenever a constructor function is used, 'this' refers to the specific instance of the object that is created and returned by the constructor function.
+
+ Explicit binding: Whenever JS's call or apply method is used, 'this' is explcitly defined. 
 
 5. Why do we need super() in an extended class?
+Super() is used to tell the parents' constructor to be concerned with the child's attributes, and abstracts away the really tricky parts of the object that is being created.
 
 ## Project Set up
 
