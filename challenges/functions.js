@@ -25,13 +25,32 @@ consume("Monsters", "Shinedown", music);
 * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-function consume(a, b, callback)
+function consume(x,y,cb)
+   {
+    func=cb(x,y);
+    return func
+   }
+  function add(x,y){
+	return x+y;
+   }
+
+   function multiply(x,y){
+	return x*y;}
+
+  function greeting (string1,string2){
+    return `Hello ${string1} ${string2}, nice to meet you!`
+  }
+
+ let addition = consume(4,5,add)
+   multiplication = consume(4,5,multiply)
+  console.log(addition,multiplication)
+  consume("Mary","Poppins", greeting);
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
