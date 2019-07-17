@@ -56,6 +56,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
+// Closures allow the `nestedfunction()` to access the variable within the `myFunction()`
 
 // Explanation: 
 
