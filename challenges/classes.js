@@ -13,7 +13,7 @@
 
 // BASE CLASS
 
-class CuboidMaker {
+class CuboidMaker2 {
     constructor (CuboidMakerAttribute) {
     this.length = CuboidMakerAttribute.length;
     this.width = CuboidMakerAttribute.width;
@@ -29,7 +29,7 @@ class CuboidMaker {
   
   // SUB CLASS
   
-  class CubeMaker extends CuboidMaker {
+  class CubeMaker extends CuboidMaker2 {
     constructor(CubeMakerAttribute) {
       super(CubeMakerAttribute);    
     }
@@ -43,7 +43,7 @@ class CuboidMaker {
   
   // OBJECT
   
-  const cuboid = new CuboidMaker({
+  const cuboid2 = new CuboidMaker2({
     'length': 4,
     'width': 5,
     'height': 5,
@@ -59,8 +59,8 @@ class CuboidMaker {
   
   // For Cuboid
   
-  console.log(cuboid.volume());
-  console.log(cuboid.surfaceArea());
+  console.log(cuboid2.volume());
+  console.log(cuboid2.surfaceArea());
   
   // For Cube
   
